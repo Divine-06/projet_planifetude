@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f8;
+    padding: 20px 10px;
+    color: #333;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    overflow: auto;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.card-header h1 {
+    font-size: 26px;
+    color: #0a2a66;
+}
+
+.btn-ajouter {
+    background-color: #0a2a66;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ajouter:hover {
+    background-color: #083a8c;
+}
+
+.tableau {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tableau thead {
+    background-color: #0a2a66;
+    color: white;
+}
+
+.tableau th,
+.tableau td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tableau tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tableau tr:hover {
+    background-color: #eef2f7;
+}
+
+.btn-modifier,
+.btn-supprimer {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-modifier {
+    background-color: #0a2a66;
+    color: white;
+}
+
+.btn-modifier:hover {
+    background-color: #083a8c;
+}
+
+.btn-supprimer {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.btn-supprimer:hover {
+    background-color: #b30000;
+}
+@media screen and (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+
+    .card-header h1 {
+        font-size: 22px;
+    }
+
+    .btn-ajouter {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .tableau th,
+    .tableau td {
+        padding: 10px;
+    }
+
+    .btn-modifier,
+    .btn-supprimer {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+}
